@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"  class="h-full">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Eddie Dale</title>
+	<link rel="stylesheet" href="/css/style.css?v=1.07">
+</head>
+<body class="h-full bg-black font-mono">
+
+  <div class="h-full mx-auto max-w-7xl px-6 py-16 relative z-10 text-white font-light sm:px-6 sm:py-24 lg:px-8 lg:py-48">
+
+    <a class="underline" href="/blog">Back</a>
+
+    <h1 class="mt-6 font-medium text-4xl tracking-tight text-white">CMS filesize comparisons</h1>
+    <p class="mt-4 text-sm">13.Sep 2023 – Eddie Dale</p>
+
+    <main class="mt-8 prose prose-invert pb-64">
+      <p>People probably disagree with the usefulness of a blunt size-comparison between CMS'es. But I find it a great indication of complexity vs simplicity, tendencies of bloat, load times ++.</p><p>I only really care about PHP CMSes, and my testing list goes like this:</p><ul><li><a href="http://craftcms.com">Craft CMS</a><ul><li>Their official <a href="https://github.com/craftcms/craft">Starter Kit</a></li></ul></li><li><a href="https://wordpress.org">Wordpress</a><ul><li>To have a fair comparison I removed the included themes.</li></ul></li><li><a href="https://statamic.com">Statamic</a><ul><li>"Blank Site" with no starter kit.</li></ul></li><li><a href="https://getkirby.com">Kirby CMS</a><ul><li>"plainkit" with no theme code included</li></ul></li><li>As a fun little extra one I'll add <a href="https://perchrunway.com">Perch Runway</a>, because I used that a lot back in the day, and always found its great advantage was its "lightness".</li></ul><h2>…and drumroll:</h2><ol><li>The winner: Kirby CMS. Weighing in at 6.1MB it is miles ahead of (most) competitors.</li><li>Runner up: Perch Runway. At 11.2MB it is almost double the size of Kirby, but still very light compared to the rest. Still, Perch is not actively maintained, and is not a good option for new projects in 2023. It is more included in this list because of my personal history using it.</li><li>Wordpress: A whooping 54.9MB without any theme code is almost 10 times the size of Kirby. And we all know how much plugin and theme code usually gets added.</li><li>Craft CMS: 70.8MB. My current go-to CMS. There is really a lot to love about Craft CMS, but the size of the codebase is not one of them.</li><li>Statamic: 86.3MB. Laravel sure is a great framework underneath, but it definitely comes at a cost. The /vendor folder excluding the /statamic folder is 67MB alone.</li></ol><p>I don't know about you, but I really like to live by the principle "as little code as possible", or rather "as little complexity as possible". I feel this is as good of an indicator as many.</p><p>As an aside: Statamic and Kirby does not use databases. Craft, Wordpress and Perch will have the added size (and complexity) of databases added on top. Another win for Kirby if you ask me.</p><p>Kirby sure is looking like an interesting option going forward. &#x1f914;</p>
+    </main>
+
+  </div>
+
+</body>
+</html><!-- Cached by Blitz on 2023-09-13T03:51:40-07:00 -->
