@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"  class="h-full">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer data-domain="eddiedale.com" src="https://plausible.io/js/script.js"></script>
+	<title>Eddie Dale</title>
+	<link rel="stylesheet" href="/css/style.css?v=1.07">
+</head>
+<body class="h-full bg-black font-mono">
+
+  <div class="h-full mx-auto max-w-7xl px-6 py-16 relative z-10 text-white font-light sm:px-6 sm:py-24 lg:px-8 lg:py-48">
+
+    <a class="underline" href="/blog">Back</a>
+
+    <h1 class="mt-6 font-medium text-4xl tracking-tight text-white">Using Laravel Valet at the same time as DDEV</h1>
+    <p class="mt-4 text-sm">20.Sep 2023 – Eddie Dale</p>
+
+    <main class="mt-8 prose prose-invert pb-64">
+      <p>I mainly work with Craft CMS sites currently, and I made the switch from Laravel Valet to DDEV as per their suggestions last year.</p><p>Generally there is much to like about DDEV, especially the aspect of having different versions of PHP per project is a bit easier to maintain than it was in Laravel Valet, and to have this config directly in the project files. </p><p>But I sure do miss the simplicity that Valet had. Just drop a folder into the parked folder, and its instantly available at foldername.test in the browser.</p><p>Especially seeing my newfound fascination for the flat file CMS Kirby, I really miss being able to just drop the folder in the Valet directory and be up and running.</p><p>So, now I run both side by side. This is how I've done it:</p><p>I've made two separate coding folders: One for my DDEV projects (Craft CMS), and one for Valet; my new "lightweight" quick work directory.</p><p>To avoid port-issues I set up DDEV projects using a specific port:</p><p><strong>config.yaml:</strong><br />router_http_port: "8080"<br />router_https_port: "8443"</p><p>This somehow still didn't allow me to <strong>ddev start </strong>my projects initially, because it still squirmed about port 433 being in use. So it was needed to do a <strong>ddev poweroff </strong>before the <strong>ddev start</strong>.</p>
+    </main>
+
+  </div>
+
+</body>
+</html><!-- Cached by Blitz on 2023-09-20T03:11:05-07:00 -->
